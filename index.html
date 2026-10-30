@@ -9,9 +9,12 @@
         content="A basic layout for the course wdd231, Web Front Development at BYU-Idaho Where we practice prerequisite in html, css and javascript ">
     <meta name="author" content="Joe Kabusako Iviti">
 
-    <link rel="stylesheet" href="styles/index-large.css">
-    <link rel="stylesheet" href="styles/index.css">
+
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+
+
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/course.js" defer></script>
     <script src="scripts/date.js" defer></script>
@@ -24,7 +27,7 @@
             <img src="images/logo.svg" alt="chamber of commerce logo">
             <span>Joe Kabusako Iviti</span>
 
-            <button id="menu" aria-label="open navigation menu">☰</button>
+            <button id="menu" type="button" aria-label="open navigation menu" aria-expanded="false">☰</button>
         </div>
         <nav class="navigation">
             <ul>

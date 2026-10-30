@@ -2,21 +2,23 @@
      --section-bg: rgb(173 216 230);
      --font-color: rgb(0 0 0);
      --bg-color: rgb(200 200 200);
+     --h-color: rgb(255 0 0);
  }
 
 
  .header-content {
      display: flex;
      align-items: center;
-     justify-content: space-between;
+     justify-content: space-around;
      padding: 15px;
 
  }
 
 
  #menu {
+     display: block;
      font-size: 2rem;
-     background-color: none;
+     background-color: transparent;
      border: none;
      cursor: pointer;
  }
@@ -28,32 +30,54 @@
  .navigation {
      display: none;
      flex-direction: column;
-     text-align: center;
+     text-align: left;
      gap: 8px;
+     background-color: var(--section-bg);
+
  }
 
  .navigation.show {
      display: flex;
+
  }
 
  .navigation a {
+
      text-decoration: none;
      padding: 15px;
+     color: var(--font-color);
+     transition: color 0.3s ease;
+
+
+ }
+
+ .navigation a:hover {
+     color: var(--h-color);
+
+ }
+
+ .navigation ul {
+     list-style: none;
+
  }
 
 
-   body {
-       margin: 0;
-       padding: auto;
+ body {
+     margin: 0;
+     padding: auto;
 
-   }
- main {
-     display: flex;
-     flex-direction: column;
-     gap: 5px;
-     padding: 5px;
-     margin: 5px;
  }
+
+
+
+ .container {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 16px;
+
+ }
+
+
 
 
  section h2 {
@@ -76,15 +100,12 @@
  }
 
 
- .container {
-     display: grid;
-     grid-template-columns: 1fr auto;
-     gap: 20px;
- }
+
 
  .sect2 img {
-     width: 90px;
-     height: auto;
+     width: 150px;
+
+
  }
 
  .sect3 {
@@ -92,8 +113,13 @@
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      grid-template-rows: repeat(2, auto);
-     gap: 10px;
+     gap: 4px;
 
+ }
+
+ main {
+     margin: 5px;
+     padding: 5px;
  }
 
  .sect1 p {
@@ -137,6 +163,6 @@
      text-align: center;
      background-color: var(--bg-color);
      padding: 5px;
-     margin: 5;
+     margin: 5px;
 
  }
