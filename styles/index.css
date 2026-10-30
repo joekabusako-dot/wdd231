@@ -1,0 +1,142 @@
+ :root {
+     --section-bg: rgb(173 216 230);
+     --font-color: rgb(0 0 0);
+     --bg-color: rgb(200 200 200);
+ }
+
+
+ .header-content {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 15px;
+
+ }
+
+
+ #menu {
+     font-size: 2rem;
+     background-color: none;
+     border: none;
+     cursor: pointer;
+ }
+
+ .header-content img {
+     width: 50px;
+ }
+
+ .navigation {
+     display: none;
+     flex-direction: column;
+     text-align: center;
+     gap: 8px;
+ }
+
+ .navigation.show {
+     display: flex;
+ }
+
+ .navigation a {
+     text-decoration: none;
+     padding: 15px;
+ }
+
+
+   body {
+       margin: 0;
+       padding: auto;
+
+   }
+ main {
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+     padding: 5px;
+     margin: 5px;
+ }
+
+
+ section h2 {
+     background-color: var(--section-bg);
+     padding: 5px;
+     text-align: center;
+     border: 2px solid var(--section-bg);
+     margin-top: 0;
+ }
+
+
+ .sect1 {
+     background-color: var(--bg-color);
+
+ }
+
+ .sect2 {
+     background-color: var(--bg-color);
+
+ }
+
+
+ .container {
+     display: grid;
+     grid-template-columns: 1fr auto;
+     gap: 20px;
+ }
+
+ .sect2 img {
+     width: 90px;
+     height: auto;
+ }
+
+ .sect3 {
+     grid-column: 1/-1;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(2, auto);
+     gap: 10px;
+
+ }
+
+ .sect1 p {
+     padding: 5px;
+ }
+
+
+
+ .sect3 p {
+     border: 1px solid var(--bg-color);
+     background-color: var(--bg-color);
+     padding: 4px;
+     text-align: center;
+ }
+
+
+ .sect3 h3 {
+     border: 2px solid var(--font-color);
+     background-color: var(--bg-color);
+     padding: 4px;
+     border-radius: 8px;
+     text-align: center;
+ }
+
+ .sect3 h2 {
+     grid-column: 1/-1;
+ }
+
+ .social-links {
+     display: flex;
+     justify-content: center;
+ }
+
+ .social-links img {
+     width: 40px;
+     text-align: center;
+ }
+
+ .datefooter {
+     border: 1px solid var(--bg-color);
+     text-align: center;
+     background-color: var(--bg-color);
+     padding: 5px;
+     margin: 5;
+
+ }

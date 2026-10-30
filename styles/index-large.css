@@ -1,0 +1,167 @@
+@media (min-width: 680px) {
+
+    :root {
+        --section-bg: rgb(173 216 230);
+        --font-color: rgb(0 0 0);
+        --bg-color: rgb(200 200 200);
+    }
+
+    header {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    main h1 {
+
+        color: black;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        padding: 5px;
+
+
+
+    }
+
+    .header-content img {
+        width: 50px;
+    }
+
+    .header-content {
+        display: block;
+        font-size: larger;
+        font-weight: bold;
+    }
+
+
+    #menu {
+        display: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        border: 1px solid var(--section-bg);
+        padding: 10px;
+        gap: 30px;
+        background-color: var(--section-bg);
+
+    }
+
+    .navigation ul a {
+        text-decoration: none;
+        color: var(--font-color);
+    }
+
+    body {
+        margin: 0;
+        padding: auto;
+
+    }
+
+    main {
+        margin: 5px;
+        padding: 5px
+    }
+
+    section h2 {
+        background-color: var(--section-bg);
+        padding: 5px;
+        text-align: center;
+        border: 2px solid var(--section-bg);
+        margin-top: 0;
+    }
+
+    .sect1 {
+        background-color: var(--bg-color);
+
+    }
+
+    .sect2 {
+        background-color: var(--bg-color);
+
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 20px;
+    }
+
+    .sect2 img {
+        width: 250px;
+        height: auto;
+    }
+
+    .sect3 {
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+
+    }
+
+    .sect1 p {
+        padding: 5px;
+    }
+
+    
+
+    .sect3 p {
+        border: 1px solid var(--bg-color);
+        background-color: var(--bg-color);
+        padding: 4px;
+        text-align: center;
+    }
+
+    .sect3 h3 {
+        border: 2px solid var(--font-color);
+        background-color: var(--bg-color);
+        padding: 4px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .sect3 h2 {
+        grid-column: 1/-1;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-links img {
+        width: 50px;
+        text-align: center;
+    }
+
+
+    .datefooter {
+        border: 1px solid var(--bg-color);
+        text-align: center;
+        background-color: var(--bg-color);
+        padding: 5px;
+        margin: 5;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

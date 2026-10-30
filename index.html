@@ -5,10 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I'm Joe Kabusako</title>
+    <meta name="description"
+        content="A basic layout for the course wdd231, Web Front Development at BYU-Idaho Where we practice prerequisite in html, css and javascript ">
+    <meta name="author" content="Joe Kabusako Iviti">
+
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 
 <body>
-    <h1>Joekl Kabusako</h1>
+    <header>
+        <div class="header-content">
+
+            <img src="images/logo.svg" alt="chamber of commerce logo">
+            <span>Joe Kabusako Iviti</span>
+
+            <button id="menu" aria-label="open navigation menu">☰</button>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="container">
+
+            <section class="sect1">
+                <h2>About Me</h2>
+                <p>I'm Joe kabusako Iviti, I have A bachelor's degree in civil Engineering and I'm currently studying
+                    web
+                    frontend development At BYU-Idaho through BYU-PATHWAY Worldwide program. I'm from DR Congo. I live
+                    in
+                    Kinshasa, the Capital city of DR Congo.</p>
+
+
+            </section>
+
+            <section class="sect2">
+                <h2>My photo</h2>
+                <img src="images/joekabu.jpg" alt="Joe Kabusako iviti">
+            </section>
+
+            <section class="sect3">
+                <h2>Web Certification Courses</h2>
+                <h3>All</h3>
+                <h3>CES</h3>
+                <h3>WDD</h3>
+                <p>WDD130</p>
+                <p>WDD131</p>
+                <p>WDD231</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1EbgESSg8r/" aria-label="Facebook"><img
+                    src="images/facebook-3-logo.svg" alt="facebook icon"></a>
+            <a href="https://www.github.com/joekabusako-dot" aria-label="Github"><img src="images/logo-github.svg"
+                    alt="github  icon"></a>
+            <a href="https://www.linkedin.com/in/joe-kabusako" aria-label="Linkedin"><img
+                    src="images/linkedin-icon-logo.svg" alt="linkedin icon"></a>
+
+        </div>
+
+        <div class="datefooter">
+
+            <p>&copy; <span id="currentyear"></span> 👷‍♂️ Joe Kabusako Iviti 👷‍♂️ Congo-Kinshasa. All rights reserved.
+            </p>
+            <p id="lastModified"></p>
+
+        </div>
+
+    </footer>
 
 </body>
 
