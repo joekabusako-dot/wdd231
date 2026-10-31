@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -30,11 +30,11 @@ const courses = [
         title: 'Programming with Functions',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
+        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call, debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -76,4 +76,72 @@ const courses = [
         ],
         completed: false
     }
-]
+];
+
+// Select the HTML elements
+const courseContainer = document.querySelector("#course-container");
+const totalCreditsElement = document.querySelector("#total-credits");
+
+// Display courses dynamically
+function displayCourses(displayedCourses) {
+
+    courseContainer.innerHTML = "";
+
+    displayedCourses.forEach(course => {
+
+        const courseCard = document.createElement("div");
+
+        courseCard.classList.add("course");
+
+        // Indicate completed courses
+        if (course.completed) {
+            courseCard.classList.add("completed");
+        }
+
+        courseCard.innerHTML = `
+            <h3>${course.subject} ${course.number}</h3>
+            
+            <p>${course.credits} credits</p>
+            
+            
+            ${course.completed ? "<p>✓ Completed</p>" : "<p>Not Completed</p>"}
+        `;
+
+        courseContainer.appendChild(courseCard);
+
+    });
+
+    // Calculate total credits for displayed courses
+    const totalCredits = displayedCourses.reduce((total, course) => {
+        return total + course.credits;
+    }, 0);
+
+    totalCreditsElement.textContent = `Total Credits: ${totalCredits}`;
+}
+
+// Select the buttons
+const allButton = document.querySelector("#all");
+const wddButton = document.querySelector("#wdd");
+const cseButton = document.querySelector("#cse");
+
+// Display all courses
+allButton.addEventListener("click", () => {
+    displayCourses(courses);
+});
+
+// Display WDD courses
+wddButton.addEventListener("click", () => {
+    const wddCourses = courses.filter(course => course.subject === "WDD");
+
+    displayCourses(wddCourses);
+});
+
+// Display CSE courses
+cseButton.addEventListener("click", () => {
+    const cseCourses = courses.filter(course => course.subject === "CSE");
+
+    displayCourses(cseCourses);
+});
+
+// Display all courses when the page loads
+displayCourses(courses);
