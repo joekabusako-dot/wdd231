@@ -3,6 +3,16 @@
      --font-color: rgb(0 0 0);
      --bg-color: rgb(200 200 200);
      --h-color: rgb(255 0 0);
+
+
+     --course-bg: rgb(241, 241, 241);
+     --course-text: rgb(34, 34, 34);
+     --course-border: rgb(204, 204, 204);
+
+     --completed-bg: rgb(232, 245, 233);
+     --completed-border: rgb(46, 125, 50);
+     --completed-text: rgb(27, 94, 32);
+
  }
 
 
@@ -168,16 +178,16 @@
  }
 
  .course {
-     background-color: #f1f1f1;
-     color: #222;
-     border: 1px solid #ccc;
+     background-color: var(--course-bg);
+     color: var(--course-text);
+     border: 1px solid var(--course-border);
      padding: 15px;
      margin: 10px;
      border-radius: 8px;
  }
 
  .course.completed {
-     background-color: #e8f5e9;
-     border: 2px solid #2e7d32;
-     color: #1b5e20;
+     background-color: var(--completed-bg);
+     border: 2px solid var(--completed-border);
+     color: var(--completed-text);
  }
