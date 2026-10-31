@@ -24,7 +24,7 @@
 
     main h1 {
 
-        color: black;
+        color:var(--font-color);
     }
 
     .header-content {
