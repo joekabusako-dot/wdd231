@@ -1,0 +1,18 @@
+{
+    "familyName": "kabusako",
+    "dateInNewward": "2020-09-13",
+    "numberOfpeopleInFamily": "2",
+    "familyVisitedByBishop": true,
+    "individualFamilyMembers": [
+        {
+            "name": "joe kabusako",
+            "gender": "Male",
+            "birthdate": "1999-05-05"
+        },
+        {
+            "name": "Carmel Kabusako",
+            "gender": "Male",
+            "birthdate": "2004-07-29"
+        }
+    ]
+}
