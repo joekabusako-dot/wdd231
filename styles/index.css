@@ -122,8 +122,8 @@ section h2 {
 }
 
 .sect3 p {
-    border: 1px solid var(--bg-color);
-    background-color: var(--bg-color);
+     border: 1px solid var(--bg-color);
+    background-color: var(--bg-color); 
     padding: 4px;
     text-align: center;
 }
