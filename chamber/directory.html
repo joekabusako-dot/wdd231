@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinshasa - Chamber Of Commerce</title>
+
+
+    <!--Open graph properties-->>
+    <meta property="og.title" content="Chamber of commerce website">
+    <meta property="og.description"
+        content="A basic layout for the course wdd231, Web Front Development at BYU-Idaho Where we practice prerequisite in html, css and javascript ">
+    <meta property="og.image" content="https://joekabusako-dot.github.io/wdd231/images/joekabu.jpg">
+    <meta property="og.url" content="https://joekabusako-dot.github.io/wdd231/">
+
+    <meta name="description"
+        content="A basic layout for the course wdd231, Web Front Development at BYU-Idaho Where we practice prerequisite in html, css and javascript ">
+    <meta name="author" content="Joe Kabusako Iviti">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+
+
+    <script src="scripts/navigation.js" defer></script>
+
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-content">
+
+            <img src="images/logo.svg" alt="chamber of commerce logo">
+            <span>Kinshasa Chamber Of commerce</span>
+
+            <button id="menu" type="button" aria-label="open navigation menu" aria-expanded="false">☰</button>
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <h1>Directory</h1>
+       
+
+    </main>
+
+
+    <footer class="footer-container">
+        <div class="contact">
+            <h3>KInshasa Chamber Of Commerce</h3>
+            <p>120 Boulevard Du 30 Juin</p>
+            <p>Kinshasa, Dr Congo</p>
+            <p>info@kinshasachamber.org</p>
+            <p>+243 000 000 000</p>
+
+        </div>
+
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1EbgESSg8r/" aria-label="Facebook"><img
+                    src="images/facebook-3-logo.svg" alt="facebook icon"></a>
+            <a href="https://www.github.com/joekabusako-dot" aria-label="Github"><img src="images/logo-github.svg"
+                    alt="github  icon"></a>
+            <a href="https://www.linkedin.com/in/joe-kabusako" aria-label="Linkedin"><img
+                    src="images/linkedin-icon-logo.svg" alt="linkedin icon"></a>
+
+        </div>
+
+        <div class="datefooter">
+
+            <p>WDD231 Class Project</p>
+            <p>Joe Kabusako Iviti</p>
+
+            <p>&copy; <span id="currentyear"></span> Kinshasa Chamber Of Commerce
+            </p>
+            <p id="lastModified"></p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
