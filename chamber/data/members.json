@@ -1,0 +1,58 @@
+[
+    {
+        "companyName": "kIJ sarl",
+        "address": "12 boulevard lumumba,DRCongo",
+        "phoneNumber": "+243 81 123 4567",
+        "url": "http://www.olk-tech.com",
+        "imagefilename": "kij_sarl.jpg",
+        "membershipLevel": "silver"
+    },
+    {
+        "companyName": "Hkl construct",
+        "address": "23 avenue de la paix,DRCongo",
+        "phoneNumber": "+243 81 765 4321",
+        "url": "http://www.olk-tech.com",
+        "imagefilename": "hkl_construct.jpg",
+        "membershipLevel": "gold"
+    },
+    {
+        "companyName": "ABC Industries",
+        "address": "45 route de l'industrie,DRCongo",
+        "phoneNumber": "+243 81 987 6543",
+        "url": "http://www.olk-tech.com",
+        "imagefilename": "abc_industries.jpg",
+        "membershipLevel": "gold"
+    },
+    {
+        "companyName": "olk Technologies",
+        "address": "02 rue de la technologie,DRCongo",
+        "phoneNumber": "+243 81 555 1234",
+        "url": "http://www.olk-tech.com",
+        "imagefilename": "olk_technologies.jpg",
+        "membershipLevel": "member"
+    },
+    {
+        "companyName": "power solutions",
+        "address": "10 avenue de l'énergie,DRCongo",
+        "phoneNumber": "+243 81 111 2222",
+        "url": "http://www.olk-tech.com",
+        "imagefilename": "power_solutions.jpg",
+        "membershipLevel": "silver"
+    },
+    {
+        "companyName": "green energy",
+        "address": "15 route de l'environnement,DRCongo",
+        "phoneNumber": "+243 81 333 4444",
+        "url": "http://www.olk-tech.com",
+        "imagefilename": "green_energy.jpg",
+        "membershipLevel": "gold"
+    },
+    {
+        "companyName": "eco builders",
+        "address": "20 rue de l'écologie,DRCongo",
+        "phoneNumber": "+243 81 555 6666",
+        "url": "http://www.olk-tech.com",
+        "imagefilename": "eco_builders.jpg",
+        "membershipLevel": "member"
+    }
+]
