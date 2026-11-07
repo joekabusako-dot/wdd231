@@ -25,8 +25,8 @@ function displayMembers(members) {
         const phone = document.createElement("p");
         phone.textContent = member.phoneNumber;
 
-        const url = document.createElement("p");
-        url.textContent = member.url;
+        const website = document.createElement("p");
+        website.textContent = member.url;
 
         const imagefileNam = document.createElement("p");
         imagefileNam.textContent = member.imagefileName;
@@ -37,10 +37,24 @@ function displayMembers(members) {
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
-        card.appendChild(url);
+        card.appendChild(website);
         card.appendChild(imagefileNam);
         card.appendChild(level);
         memberContainer.appendChild(card);
 
-    })
+    });
 }
+
+const container = document.querySelector("#member-container");
+const gridButton = document.querySelector("#grid-view");
+const listButton = document.querySelector("#list-view");
+
+gridButton.addEventListener("click", () => {
+    container.classList.add("grid");
+    container.classList.remove("list");
+});
+
+listButton.addEventListener("click", () => {
+    container.classList.add("list");
+    container.classList.remove("grid");
+});
