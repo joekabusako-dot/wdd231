@@ -48,14 +48,18 @@
     .navigation ul {
         display: flex;
         flex-direction: row;
+        justify-content: right;
         list-style: none;
         padding: 10px;
         gap: 30px;
+
+
     }
 
     .navigation ul a {
         text-decoration: none;
         color: var(--font-color);
+
     }
 
     .navigation a:hover {
@@ -93,6 +97,7 @@
         gap: 20px;
     }
 
+
     .social-links {
         display: flex;
         justify-content: center;
@@ -117,6 +122,7 @@
     /* Member directory */
 
     #member-container {
+
         padding: 20px;
     }
 
@@ -142,5 +148,23 @@
         flex-direction: column;
         gap: 10px;
     }
+
+    .member-info {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .member-info img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+    }
+
+    .member-details {
+        flex: 1;
+    }
+
+
 
 }

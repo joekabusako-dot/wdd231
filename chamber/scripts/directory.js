@@ -13,6 +13,9 @@ getMembers();
 function displayMembers(members) {
     const memberContainer = document.querySelector("#member-container");
 
+
+
+
     members.forEach((member) => {
         const card = document.createElement("section");
 
@@ -25,21 +28,45 @@ function displayMembers(members) {
         const phone = document.createElement("p");
         phone.textContent = member.phoneNumber;
 
-        const website = document.createElement("p");
-        website.textContent = member.url;
 
-        const imagefileNam = document.createElement("p");
-        imagefileNam.textContent = member.imagefileName;
+        const site = document.createElement("p");
+        site.textContent = member.url;
 
         const level = document.createElement("p")
         level.textContent = member.membershipLevel;
 
+        const website = document.createElement("img");
+        website.textContent = member.image;
+
+        website.setAttribute("src", member.image);
+        website.setAttribute("loading", "lazy");
+        website.setAttribute("width", "100");
+        website.setAttribute("height", "100");
+
+
+        const memberInfo = document.createElement("div");
+        memberInfo.classList.add("member-info")
+
+        const details = document.createElement("div");
+        details.classList.add("member-details");
+
+
+      
+       
+        details.appendChild(address);
+        details.appendChild(phone);
+        details.appendChild(level);
+        details.appendChild(site);
+
+
+        memberInfo.appendChild(website);
+        memberInfo.appendChild(details);
+
         card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(website);
-        card.appendChild(imagefileNam);
-        card.appendChild(level);
+        card.appendChild(memberInfo)
+
+        
+        
         memberContainer.appendChild(card);
 
     });

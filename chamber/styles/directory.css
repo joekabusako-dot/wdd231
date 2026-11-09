@@ -205,3 +205,13 @@ section h2 {
     padding: 10px;
     text-align: center;
 }
+
+.member-info img {
+    width: 90px;
+    height: 90px;
+}
+
+.member-info {
+
+    gap: 0.5px;
+}
