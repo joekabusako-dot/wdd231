@@ -11,7 +11,7 @@
         "companyName": "Hkl construct",
         "address": "23 avenue de la paix,DRCongo",
         "phoneNumber": "+243 81 765 4321",
-        "image": "images/joekabu.jpg",
+        "image": "images/c1.jpg",
         "url": "hkl_construct.com",
         "membershipLevel": "gold"
     },
@@ -19,7 +19,7 @@
         "companyName": "ABC Industries",
         "address": "45 route de l'industrie,DRCongo",
         "phoneNumber": "+243 81 987 6543",
-        "image": "images/joekabu.jpg",
+        "image": "images/c2.jpg",
         "url": "abc_industries.com",
         "membershipLevel": "gold"
     },
@@ -27,7 +27,7 @@
         "companyName": "olk Technologies",
         "address": "02 rue de la technologie,DRCongo",
         "phoneNumber": "+243 81 555 1234",
-        "image": "images/joekabu.jpg",
+        "image": "images/c3.jpg",
         "url": "olk_technologies.com",
         "membershipLevel": "member"
     },
@@ -35,7 +35,7 @@
         "companyName": "power solutions",
         "address": "10 avenue de l'énergie,DRCongo",
         "phoneNumber": "+243 81 111 2222",
-        "image": "images/joekabu.jpg",
+        "image": "images/c4.jpg",
         "url": "power_solutions.org",
         "membershipLevel": "silver"
     },
@@ -43,7 +43,7 @@
         "companyName": "green energy",
         "address": "15 route de l'environnement,DRCongo",
         "phoneNumber": "+243 81 333 4444",
-        "image": "images/joekabu.jpg",
+        "image": "images/c5.jpg",
         "url": "green_energy.org",
         "membershipLevel": "gold"
     },
@@ -51,7 +51,7 @@
         "companyName": "eco builders",
         "address": "20 rue de l'écologie,DRCongo",
         "phoneNumber": "+243 81 555 6666",
-        "image": "images/joekabu.jpg",
+        "image": "images/c6.jpg",
         "url": "eco_builders.com",
         "membershipLevel": "member"
     }

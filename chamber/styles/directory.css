@@ -157,7 +157,7 @@ section h2 {
     padding: 10px;
 }
 
-#member-container section {
+#member-container.grid section {
     border: 1px solid var(--completed-border);
     padding: 15px;
     border-radius: 8px;
@@ -178,7 +178,35 @@ section h2 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
 }
+
+#member-container.list section {
+
+    background-color: var(--completed-bg);
+    padding: 15px;
+
+
+}
+
+#member-container.list section p {
+    background-color: var(--bg-color);
+}
+
+
+
+#member-container.list section h2 {
+    background-color: var(--h-color);
+}
+
+
+
+
+
+
+
+
+
 
 /* Social links */
 
@@ -214,4 +242,10 @@ section h2 {
 .member-info {
 
     gap: 0.5px;
+}
+
+.active {
+    color: var(--h-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--h-color);
 }

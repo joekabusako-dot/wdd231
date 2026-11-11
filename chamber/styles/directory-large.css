@@ -165,6 +165,12 @@
         flex: 1;
     }
 
+    .active {
+        color: var(--h-color);
+        font-weight: bold;
+        border-bottom: 2px solid var(--h-color);
+    }
+
 
 
 }
