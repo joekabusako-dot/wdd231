@@ -306,14 +306,10 @@ a:hover {
     color: var(--h-color);
 }
 
-.all-sections section {
-    background-color: var(--white-cl);
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid var(--h-color);
 
 
-}
+
+
 
 .spotlight-card:hover {
     transform: translateY(-5px);
