@@ -9,3 +9,14 @@ menuButton.addEventListener("click", () => {
 
     menuButton.setAttribute("aria-expanded", isOpen);
 });
+
+
+const currentPage = window.location.pathname.split("/").pop();
+
+const navLinks = document.querySelectorAll(".navigation a");
+
+navLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+    }
+});

@@ -7,6 +7,7 @@
     --completed-bg: rgb(232, 245, 233);
     --completed-border: rgb(46, 125, 50);
     --completed-text: rgb(27, 94, 32);
+    --white-cl: rgb(240, 244, 248);
 }
 
 /* General styles */
@@ -144,7 +145,7 @@ section h2 {
     text-align: center;
 }
 
-/* Member directory */
+
 
 .view-buttons {
     display: flex;
@@ -203,11 +204,6 @@ section h2 {
 
 
 
-
-
-
-
-
 /* Social links */
 
 .social-links {
@@ -247,5 +243,94 @@ section h2 {
 .active {
     color: var(--h-color);
     font-weight: bold;
-    border-bottom: 2px solid var(--h-color);
+    border-radius: 20px;
+    border: 2px solid var(--h-color);
+}
+
+.hero-image {
+    inset: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    
+
+
+}
+
+.main-content {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    
+
+
+
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 16px;
+    
+
+}
+
+.all-sections {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    padding: 16px;
+}
+
+.hero-content h1 {
+    background-color: var(--bg-color);
+    text-align: center;
+    padding: 8px;
+    border: 1px solid var(--font-color);
+    border-radius: 20px;
+
+}
+
+.all-sections section {
+    background-color: var(--white-cl);
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--h-color);
+}
+
+a:hover {
+    color: var(--h-color);
+}
+
+.all-sections section {
+    background-color: var(--white-cl);
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--h-color);
+
+
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.spotlight-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid rgb(0, 51, 102);
+}
+
+
+.all-sections:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
