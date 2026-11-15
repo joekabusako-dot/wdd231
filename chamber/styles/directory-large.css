@@ -1,31 +1,6 @@
 @media (min-width: 800px) {
 
-:root {
-        --section-bg: #add8e6;
-        --font-color: #000000;
-        --bg-color: #c8c8c8;
-        --h-color: #ff0000;
 
-        --completed-bg: #e8f5e9;
-        --completed-border: #2e7d32;
-        --completed-text: #1b5e20;
-
-        --white-cl: #f0f4f8;
-        --white: #ffffff;
-
-        --weather-bg: #f5f7fa;
-
-        --spotlight-border: #dddddd;
-        --spotlight-title: #003366;
-        --spotlight-link: #0066cc;
-        --spotlight-text: #222222;
-
-        --gold: #d4af37;
-        --silver: #808080;
-
-        --shadow-light: #0000001a;
-        --shadow-dark: #00000026;
-    }
 
     header {
         display: flex;
