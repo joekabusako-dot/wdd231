@@ -1,30 +1,30 @@
 @media (min-width: 800px) {
 
-    :root {
-        --section-bg: rgb(173, 216, 230);
-        --font-color: rgb(0, 0, 0);
-        --bg-color: rgb(200, 200, 200);
-        --h-color: rgb(255, 0, 0);
+:root {
+        --section-bg: #add8e6;
+        --font-color: #000000;
+        --bg-color: #c8c8c8;
+        --h-color: #ff0000;
 
-        --completed-bg: rgb(232, 245, 233);
-        --completed-border: rgb(46, 125, 50);
-        --completed-text: rgb(27, 94, 32);
+        --completed-bg: #e8f5e9;
+        --completed-border: #2e7d32;
+        --completed-text: #1b5e20;
 
-        --white-cl: rgb(240, 244, 248);
-        --white: rgb(255, 255, 255);
+        --white-cl: #f0f4f8;
+        --white: #ffffff;
 
-        --weather-bg: rgb(245, 247, 250);
+        --weather-bg: #f5f7fa;
 
-        --spotlight-border: rgb(221, 221, 221);
-        --spotlight-title: rgb(0, 51, 102);
-        --spotlight-link: rgb(0, 102, 204);
-        --spotlight-text: rgb(34, 34, 34);
+        --spotlight-border: #dddddd;
+        --spotlight-title: #003366;
+        --spotlight-link: #0066cc;
+        --spotlight-text: #222222;
 
-        --gold: rgb(212, 175, 55);
-        --silver: rgb(128, 128, 128);
+        --gold: #d4af37;
+        --silver: #808080;
 
-        --shadow-light: rgba(0, 0, 0, 0.1);
-        --shadow-dark: rgba(0, 0, 0, 0.15);
+        --shadow-light: #0000001a;
+        --shadow-dark: #00000026;
     }
 
     header {
