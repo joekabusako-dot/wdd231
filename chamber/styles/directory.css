@@ -7,7 +7,22 @@
     --completed-bg: rgb(232, 245, 233);
     --completed-border: rgb(46, 125, 50);
     --completed-text: rgb(27, 94, 32);
+
     --white-cl: rgb(240, 244, 248);
+    --white: rgb(255, 255, 255);
+
+    --weather-bg: rgb(245, 247, 250);
+
+    --spotlight-title: rgb(0, 51, 102);
+    --spotlight-link: rgb(0, 102, 204);
+    --spotlight-border: rgb(221, 221, 221);
+    --spotlight-text: rgb(34, 34, 34);
+
+    --gold: rgb(212, 175, 55);
+    --silver: rgb(128, 128, 128);
+
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-dark: rgba(0, 0, 0, 0.15);
 }
 
 /* General styles */
@@ -254,7 +269,7 @@ section h2 {
     height: 100%;
     object-fit: cover;
     z-index: 0;
-    
+
 
 
 }
@@ -263,7 +278,7 @@ section h2 {
     position: relative;
     overflow: hidden;
     margin-bottom: 0;
-    
+
 
 
 
@@ -273,7 +288,7 @@ section h2 {
     position: relative;
     z-index: 1;
     padding: 16px;
-    
+
 
 }
 
@@ -313,7 +328,7 @@ a:hover {
 
 .spotlight-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px var(--shadow-dark);
 }
 
 .spotlight-card img {
@@ -322,11 +337,11 @@ a:hover {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 1rem;
-    border: 3px solid rgb(0, 51, 102);
+    border: 3px solid var(--spotlight-title);
 }
 
 
 .all-sections:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px var(--shadow-dark);
 }
