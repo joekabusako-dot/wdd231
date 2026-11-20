@@ -1,4 +1,33 @@
 @media (min-width: 800px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid var(--section-bg);
+        background-color: var(--section-bg);
+        margin: 5px;
+        padding: 5px;
+    }
+
+    main h1 {
+        color: var(--font-color);
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .header-content img {
+        width: 50px;
+    }
+
+    .header-content span {
+        font-size: larger;
+        font-weight: bold;
+    }
 
     .navigation {
         display: block;
@@ -10,34 +39,95 @@
 
     .navigation ul {
         display: flex;
+        flex-direction: row;
+        justify-content: right;
+        list-style: none;
+        padding: 10px;
         gap: 30px;
-        justify-content: flex-end;
+    }
+
+    .navigation ul a {
+        text-decoration: none;
+        color: var(--font-color);
+    }
+
+    .navigation a:hover {
+        color: var(--h-color);
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    section h2 {
+        background-color: var(--section-bg);
+        padding: 5px;
+        text-align: center;
+        border: 2px solid var(--section-bg);
+        margin-top: 0;
+    }
+
+    .sect1,
+    .sect2 {
+        background-color: var(--bg-color);
     }
 
     .container {
+        display: grid;
         grid-template-columns: 1fr auto;
         gap: 20px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-links img {
+        width: 50px;
+    }
+
+    .datefooter {
+        padding: 5px;
     }
 
     .footer-container {
         display: flex;
         justify-content: space-around;
+        border: 1px solid var(--bg-color);
+        background-color: var(--bg-color);
+    }
+
+    #member-container {
+        padding: 20px;
+    }
+
+    #member-container section {
+        border: 1px solid var(--completed-border);
+        padding: 20px;
+        border-radius: 8px;
+        background-color: var(--completed-bg);
     }
 
     #member-container.grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .all-sections {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 50px;
-    }
-
-    #forecast {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
+        gap: 20px;
+    }
+
+    #member-container.list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .member-info {
@@ -52,18 +142,181 @@
         object-fit: contain;
     }
 
+    .member-details {
+        flex: 1;
+    }
+
+    .active {
+        color: var(--h-color);
+        font-weight: bold;
+        border-radius: 20px;
+        border: 2px solid var(--h-color);
+    }
+
+    .hero-image {
+        inset: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .main-content {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        padding: 16px;
+        color: var(--font-color);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        background-color: var(--bg-color);
+        text-align: center;
+        padding: 8px;
+        border: 1px solid var(--font-color);
+        border-radius: 20px;
+    }
+
+    .hero-content a {
+        color: var(--font-color);
+    }
+
+    .all-sections {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        padding: 16px;
+    }
+
+    .all-sections section {
+        background-color: var(--white-cl);
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid var(--h-color);
+    }
+
+    .all-sections:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px var(--shadow-dark);
+    }
+
+    a:hover {
+        color: var(--h-color);
+    }
+
+    .weather {
+        padding: 20px;
+        background-color: var(--weather-bg);
+        border-radius: 10px;
+    }
+
+    #forecast {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .forecast-day {
+        padding: 15px;
+        background-color: var(--white);
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .spotlights {
+        padding: 1rem;
+    }
+
+    #spotlight-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+    }
+
     .spotlight-card {
-        background: white;
+        background-color: var(--white);
         border: 1px solid var(--spotlight-border);
         border-radius: 10px;
         padding: 1rem;
         text-align: center;
         box-shadow: 0 2px 8px var(--shadow-light);
-        transition: .3s;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .spotlight-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 4px 12px var(--shadow-dark);
     }
+
+    .spotlight-card h3 {
+        color: var(--spotlight-title);
+        margin-bottom: 0.75rem;
+    }
+
+    .spotlight-card img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        border: 3px solid var(--spotlight-title);
+    }
+
+    .spotlight-card p {
+        margin: 0.5rem 0;
+        line-height: 1.4;
+    }
+
+    .spotlight-card a {
+        color: var(--spotlight-link);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .spotlight-card a:hover {
+        text-decoration: underline;
+    }
+
+    .spotlight-card strong {
+        color: var(--spotlight-text);
+    }
+
+    .spotlight-card p:last-child {
+        font-weight: bold;
+    }
+
+    .spotlight-card .gold {
+        color: var(--gold);
+    }
+
+    .spotlight-card .silver {
+        color: var(--silver);
+    }
+}
+
+
+
+main {
+    margin: 5px;
+    padding: 5px;
+}
+
+a:hover {
+    color: var(--h-color);
+}
+
+.active {
+    color: var(--h-color);
+    font-weight: bold;
+    border: 2px solid var(--h-color);
+    border-radius: 20px;
 }
