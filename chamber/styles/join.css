@@ -1,0 +1,146 @@
+/* JOIN PAGE LAYOUT */
+
+.join-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 2rem;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    outline: 3px solid #2878b5;
+    border-color: #2878b5;
+}
+
+.submit-btn {
+    background: #142638;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* MEMBERSHIP CARDS */
+
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.membership-card {
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    background: #e8edf2;
+    box-shadow: 0 3px 8px #0002;
+    animation: cardEntrance 0.8s ease both;
+}
+
+.membership-card:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+.membership-card:nth-of-type(3) {
+    animation-delay: 0.4s;
+}
+
+.membership-card:nth-of-type(4) {
+    animation-delay: 0.6s;
+}
+
+.membership-card:nth-of-type(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #145b96;
+    font-weight: bold;
+}
+
+/* MODALS */
+
+dialog {
+    width: min(90%, 450px);
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 25px #0005;
+}
+
+dialog::backdrop {
+    background: rgb(0 0 0 / 60%);
+}
+
+dialog button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #142638;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    .join-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .membership-cards {
+        margin-top: 1rem;
+    }
+}
+
+/* REDUCE MOTION FOR ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .membership-card {
+        animation: none;
+    }
+}
