@@ -9,30 +9,30 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background: white;
+    background: var(--white);
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
+    box-shadow: 0 3px 10px var(--shadow-form);
 }
 
 .join-form label {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
 .join-form input,
 .join-form select,
 .join-form textarea {
-    padding: .8rem;
-    border: 1px solid #ccc;
+    padding: 0.8rem;
+    border: 1px solid var(--input-border);
     border-radius: 5px;
     width: 100%;
 }
 
 .submit-btn {
-    background: #142638;
-    color: white;
+    background: var(--button-bg);
+    color: var(--white);
     border: none;
     padding: 1rem;
     cursor: pointer;
@@ -40,7 +40,7 @@
 }
 
 .submit-btn:hover {
-    background: #2878b5;
+    background: var(--button-hover);
 }
 
 .membership-cards {
@@ -50,11 +50,11 @@
 }
 
 .membership-card {
-    background: #e8edf2;
+    background: var(--membership-bg);
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, .15);
+    box-shadow: 0 3px 8px var(--shadow-card);
 }
 
 .modal-link {
@@ -70,15 +70,15 @@ dialog {
 }
 
 dialog::backdrop {
-    background: rgba(0, 0, 0, .6);
+    background: var(--backdrop);
 }
 
 dialog button {
-    background: #142638;
-    color: white;
+    background: var(--button-bg);
+    color: var(--white);
     border: none;
     border-radius: 5px;
-    padding: .7rem 1.5rem;
+    padding: 0.7rem 1.5rem;
     cursor: pointer;
 }
 
@@ -86,7 +86,7 @@ dialog button {
     max-width: 750px;
     margin: 2rem auto;
     padding: 2rem;
-    background: white;
+    background: var(--white);
     border-radius: 10px;
 }
 
@@ -98,6 +98,6 @@ dialog button {
 
 @media (max-width: 400px) {
     .join-form {
-        padding: .8rem;
+        padding: 0.8rem;
     }
 }

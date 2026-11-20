@@ -3,24 +3,41 @@
     --font-color: #000000;
     --bg-color: #c8c8c8;
     --h-color: #ff0000;
+
     --completed-bg: #e8f5e9;
     --completed-border: #2e7d32;
     --completed-text: #1b5e20;
+
     --white-cl: #f0f4f8;
     --white: #ffffff;
+
     --weather-bg: #f5f7fa;
+
     --spotlight-border: #dddddd;
     --spotlight-title: #003366;
     --spotlight-link: #0066cc;
     --spotlight-text: #222222;
+
     --gold: #d4af37;
     --silver: #808080;
+
     --shadow-light: #0000001a;
     --shadow-dark: #00000026;
+
+    --input-border: #cccccc;
+    --button-bg: #142638;
+    --button-hover: #2878b5;
+    --membership-bg: #e8edf2;
+    --backdrop: #00000099;
+    --shadow-form: #00000026;
+    --shadow-card: #00000026;
 }
 
-/* General styles */
+/* Styles généraux */
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -50,7 +67,7 @@ header {
     width: 50px;
 }
 
-menu {
+#menu {
     display: block;
     font-size: 2rem;
     background: none;
@@ -86,11 +103,13 @@ menu {
     transition: color 0.3s ease;
 }
 
-.navigation a:hover {
+.navigation a:hover,
+a:hover {
     color: var(--h-color);
 }
 
-/* Main */
+/* Contenu principal */
+
 main {
     margin: 5px;
     padding: 5px;
@@ -157,50 +176,42 @@ section h2 {
     margin: 15px 0;
 }
 
-member-container {
+/* Membres */
+
+#member-container {
     padding: 10px;
 }
 
-member-container.grid section {
+#member-container.grid section {
     border: 1px solid var(--completed-border);
     padding: 15px;
     border-radius: 8px;
     background-color: var(--completed-bg);
 }
 
-/* Grid view */
-member-container.grid {
+#member-container.grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
 }
 
-/* List view */
-member-container.list {
+#member-container.list {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-member-container.list section {
+#member-container.list section {
     background-color: var(--completed-bg);
     padding: 15px;
 }
 
-member-container.list section p {
+#member-container.list section p {
     background-color: var(--bg-color);
 }
 
-member-container.list section h2 {
+#member-container.list section h2 {
     background-color: var(--h-color);
-}
-
-/* Social links / .social-links {    display: flex;    justify-content: center;    gap: 16px;    padding: 15px;} .social-links img {    width: 40px;} .datefooter {    padding: 5px;} / Footer */
-.footer-container {
-    border: 1px solid var(--bg-color);
-    background-color: var(--bg-color);
-    padding: 10px;
-    text-align: center;
 }
 
 .member-info img {
@@ -215,9 +226,37 @@ member-container.list section h2 {
 .active {
     color: var(--h-color);
     font-weight: bold;
-    border-radius: 20px;
     border: 2px solid var(--h-color);
+    border-radius: 20px;
 }
+
+/* Liens sociaux */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 15px;
+}
+
+.social-links img {
+    width: 40px;
+}
+
+.datefooter {
+    padding: 5px;
+}
+
+/* Pied de page */
+
+.footer-container {
+    border: 1px solid var(--bg-color);
+    background-color: var(--bg-color);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Bannière et sections */
 
 .hero-image {
     inset: 0;
@@ -263,9 +302,12 @@ member-container.list section h2 {
     border: 1px solid var(--h-color);
 }
 
-a:hover {
-    color: var(--h-color);
+.all-sections:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px var(--shadow-dark);
 }
+
+/* Cartes à la une */
 
 .spotlight-card:hover {
     transform: translateY(-5px);
@@ -279,9 +321,4 @@ a:hover {
     border-radius: 50%;
     margin-bottom: 1rem;
     border: 3px solid var(--spotlight-title);
-}
-
-.all-sections:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px var(--shadow-dark);
 }
